@@ -8,14 +8,16 @@ const BackgroundGradient = styled.div`
     #04244f 48%,
     #154580 96.76%
   );
-  width:100vh;
+  width: 100vh;
   min-height: 100vh;
 `;
 
 function App() {
-  return <BackgroundGradient>
-    <GlobalStyle/>
-  </BackgroundGradient>;
+  return (
+    <BackgroundGradient>
+      <GlobalStyle />
+    </BackgroundGradient>
+  );
 }
 
 export default App;
