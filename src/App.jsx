@@ -11,7 +11,11 @@ const BackgroundGradient = styled.div`
   width: 100vh;
   min-height: 100vh;
 `;
-
+/**
+ * This function returns the JSX code for the main application component.
+ *
+ * @returns {JSX.Element} The main application component
+ */
 function App() {
   return (
     <BackgroundGradient>
