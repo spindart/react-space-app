@@ -12,21 +12,11 @@ const LateraralBar = () => {
     <aside>
       <nav>
         <StylizedList>
-          <li>
-            <a href="">Início</a>
-          </li>
-          <li>
-            <a href="">Mais vistas</a>
-          </li>
-          <li>
-            <a href="">Mais curtidas</a>
-          </li>
-          <li>
-            <a href="">Novas</a>
-          </li>
-          <li>
-            <a href="">Surpreenda-me</a>
-          </li>
+          <NavigationItem
+            activeIcon="/images/icons/home.png"
+            inactiveIcon="/images/icons/home-inactive.png"
+            text="Home"
+          ></NavigationItem>
         </StylizedList>
       </nav>
     </aside>
