@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import GlobalStyle from "./components/global-styles";
 import Header from "./components/Header";
+import LateraralBar from "./components/LateralBar";
 
 const BackgroundGradient = styled.div`
   background: linear-gradient(
@@ -22,6 +23,7 @@ function App() {
     <BackgroundGradient>
       <GlobalStyle />
       <Header />
+      <LateraralBar />
     </BackgroundGradient>
   );
 }
