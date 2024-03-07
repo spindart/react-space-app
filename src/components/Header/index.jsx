@@ -6,7 +6,7 @@ const HeaderStylized = styled.header`
   display: flex;
   justify-content: space-between;
   img {
-    max-width:212px;
+    max-width: 212px;
   }
 `;
 
@@ -14,9 +14,8 @@ const Header = () => {
   return (
     <HeaderStylized>
       <img src="./images/logo.png" alt="O que você procura?" />
-      <TextField placeholder=""></TextField>
+      <TextField placeholder="What do you search?"></TextField>
     </HeaderStylized>
-
   );
 };
 

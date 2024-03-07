@@ -10,9 +10,10 @@ const BackgroundGradient = styled.div`
     #04244f 48%,
     #154580 96.76%
   );
-  width: 100vh;
+  width: 100vw; 
   min-height: 100vh;
 `;
+
 /**
  * This function returns the JSX code for the main application component.
  *
