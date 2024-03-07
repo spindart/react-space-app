@@ -19,6 +19,9 @@ const TextFieldStylized = styled.input`
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+  ::placeholder {
+    color: #d9d9d9; /* Placeholder text color */
+  }
 `;
 
 const SearchIcon = styled.img`

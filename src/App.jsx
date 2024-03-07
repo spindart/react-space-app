@@ -2,6 +2,9 @@ import styled from "styled-components";
 import GlobalStyle from "./components/global-styles";
 import Header from "./components/Header";
 import LateraralBar from "./components/LateralBar";
+import Banner from "./components/Banner";
+
+import bannerBackground from "/assets/banner.png";
 
 const BackgroundGradient = styled.div`
   background: linear-gradient(
@@ -10,21 +13,35 @@ const BackgroundGradient = styled.div`
     #04244f 48%,
     #154580 96.76%
   );
-  width: 100vw; 
+  width: 100vw;
   min-height: 100vh;
 `;
 
-/**
- * This function returns the JSX code for the main application component.
- *
- * @returns {JSX.Element} The main application component
- */
+const MainContainer = styled.main`
+  display: flex;
+  gap: 24px;
+`;
+
+const AppContainer = styled.div`
+  width: 1440px;
+  margin: 0 auto;
+  max-width: 100%;
+`;
+
 function App() {
   return (
     <BackgroundGradient>
       <GlobalStyle />
-      <Header />
-      <LateraralBar />
+      <AppContainer>
+        <Header />
+        <MainContainer>
+          <LateraralBar />
+          <Banner
+            text="A galeria mais completa de fotos do espaço!"
+            backgroundImage={bannerBackground}
+          />
+        </MainContainer>
+      </AppContainer>
     </BackgroundGradient>
   );
 }
