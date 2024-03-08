@@ -26,7 +26,7 @@ const LateraralBar = () => {
             activeIcon="/icons/more-viewed-active.png"
             inactiveIcon="/icons/more-viewed-inactive.png"
           >
-            More viewd
+            More viewed
           </NavigationItem>
           <NavigationItem
             activeIcon="/icons/more-liked-active.png"
