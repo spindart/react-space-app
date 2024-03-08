@@ -7,7 +7,8 @@ const StylizedItemList = styled.li`
   margin-bottom: 30px;
   cursor: pointer;
   color: ${(props) => (props.$active ? "#7B78E5" : "#D9D9D9")};
-  font-family: ${(props) => (props.$active ? 'GandhiSansBold' : 'GandhiSansRegular')};
+  font-family: ${(props) =>
+    props.$active ? "GandhiSansBold" : "GandhiSansRegular"};
   display: flex;
   align-items: center;
   gap: 22px;
