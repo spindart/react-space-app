@@ -20,7 +20,7 @@ const TextFieldStylized = styled.input`
   font-size: 20px;
   line-height: 20px;
   ::placeholder {
-    color: #d9d9d9; /* Placeholder text color */
+    color: #d9d9d9; 
   }
 `;
 
