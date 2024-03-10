@@ -5,6 +5,7 @@ import LateraralBar from "./components/LateralBar";
 import Banner from "./components/Banner";
 
 import bannerBackground from "/assets/banner.png";
+import Gallery from "./components/Gallery";
 
 const BackgroundGradient = styled.div`
   background: linear-gradient(
@@ -22,6 +23,12 @@ const MainContainer = styled.main`
   gap: 24px;
 `;
 
+const ContentGallery = styled.section`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+`;
+
 const AppContainer = styled.div`
   width: 1440px;
   margin: 0 auto;
@@ -36,10 +43,13 @@ function App() {
         <Header />
         <MainContainer>
           <LateraralBar />
-          <Banner
-            text="A galeria mais completa de fotos do espaço!"
-            backgroundImage={bannerBackground}
-          />
+          <ContentGallery>
+            <Banner
+              text="A galeria mais completa de fotos do espaço!"
+              backgroundImage={bannerBackground}
+            />
+            <Gallery />
+          </ContentGallery>
         </MainContainer>
       </AppContainer>
     </BackgroundGradient>
