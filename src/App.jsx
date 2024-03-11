@@ -45,7 +45,7 @@ function App() {
           <LateraralBar />
           <ContentGallery>
             <Banner
-              text="A galeria mais completa de fotos do espaço!"
+              text="The most complete photo gallery in space!"
               backgroundImage={bannerBackground}
             />
             <Gallery />

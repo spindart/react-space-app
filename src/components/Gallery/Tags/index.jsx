@@ -31,7 +31,7 @@ const Tag = styled.button`
 const Tags = () => {
   return (
     <>
-      <TagTitleStyle>Busque por tags:</TagTitleStyle>
+      <TagTitleStyle>Search by tags:</TagTitleStyle>
       <TagsContainer>
         {tags.map((tag) => (
           <Tag key={tag.id}>{tag.title}</Tag>

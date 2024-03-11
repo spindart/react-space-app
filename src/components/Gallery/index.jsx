@@ -18,7 +18,7 @@ const Gallery = () => {
 
       <GalleryContainer>
         <FluidSection>
-          <Title>Navegue pela galeria</Title>;
+          <Title>Browse the gallery</Title>;
         </FluidSection>
         <Populars></Populars>
       </GalleryContainer>
