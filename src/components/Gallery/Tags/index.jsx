@@ -4,13 +4,15 @@ import tags from "./tags.json";
 const TagTitleStyle = styled.h3`
   color: #d9d9d9;
   font-size: 24px;
-  margin-top: 24px;
+  margin: 0;
 `;
 
 const TagsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
+  margin-top: 30px;
+  align-items: center;
 `;
 
 const Tag = styled.button`
@@ -31,8 +33,9 @@ const Tag = styled.button`
 const Tags = () => {
   return (
     <>
-      <TagTitleStyle>Search by tags:</TagTitleStyle>
       <TagsContainer>
+        <TagTitleStyle>Search by tags:</TagTitleStyle>
+
         {tags.map((tag) => (
           <Tag key={tag.id}>{tag.title}</Tag>
         ))}
