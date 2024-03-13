@@ -7,6 +7,9 @@ import Banner from "./components/Banner";
 import bannerBackground from "/assets/banner.png";
 import Gallery from "./components/Gallery";
 
+import photos from "./photos.json";
+import { useState } from "react";
+
 const BackgroundGradient = styled.div`
   background: linear-gradient(
     174.61deg,
@@ -35,7 +38,8 @@ const AppContainer = styled.div`
   max-width: 100%;
 `;
 
-function App() {
+const App = () => {
+  const [photosGallery, setPhotosGallery] = useState(photos);
   return (
     <BackgroundGradient>
       <GlobalStyle />
@@ -48,12 +52,12 @@ function App() {
               text="The most complete photo gallery in space!"
               backgroundImage={bannerBackground}
             />
-            <Gallery />
+            <Gallery expandida={true} photos={photosGallery} />
           </ContentGallery>
         </MainContainer>
       </AppContainer>
     </BackgroundGradient>
   );
-}
+};
 
 export default App;

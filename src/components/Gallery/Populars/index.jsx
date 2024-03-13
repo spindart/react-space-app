@@ -1,7 +1,7 @@
 import Title from "../../Title";
 
 const Populars = () => {
-  return <Title textAlign="center">Popular</Title>;
+  return <Title align="center">Popular</Title>;
 };
 
 export default Populars;

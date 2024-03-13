@@ -35,4 +35,5 @@ Banner.propTypes = {
   text: PropTypes.string.isRequired,
   backgroundImage: PropTypes.string.isRequired,
 };
+
 export default Banner;
