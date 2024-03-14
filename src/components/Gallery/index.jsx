@@ -67,7 +67,7 @@ const Container = styled.div`
 
 const Gallery = ({ photos = [], expandida = true }) => {
   return (
-    <div>
+    <>
       <Tags />
 
       <GalleryContainer>
@@ -87,7 +87,7 @@ const Gallery = ({ photos = [], expandida = true }) => {
         </FluidSection>
         <Populars></Populars>
       </GalleryContainer>
-    </div>
+    </>
   );
 };
 
