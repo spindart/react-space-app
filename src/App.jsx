@@ -1,14 +1,13 @@
+import { useState } from "react";
 import styled from "styled-components";
 import GlobalStyle from "./components/global-styles";
 import Header from "./components/Header";
 import LateraralBar from "./components/LateralBar";
 import Banner from "./components/Banner";
-
-import bannerBackground from "/assets/banner.png";
 import Gallery from "./components/Gallery";
 
+import bannerBackground from "/assets/banner.png";
 import photos from "./photos.json";
-import { useState } from "react";
 
 const BackgroundGradient = styled.div`
   background: linear-gradient(
