@@ -11,4 +11,3 @@ Currently, two official plugins are available:
 
 - npm install
 - npm run dev
-
